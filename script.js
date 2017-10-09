@@ -1,4 +1,4 @@
-var URL = "http://testinganapp.azurewebsites.net/api/Users";
+var URL = "http://testinganapp.azurewebsites.net/api/getUsers";
 
 function showAlert() {
     var name = document.getElementById("name").value;
