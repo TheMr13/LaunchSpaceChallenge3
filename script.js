@@ -36,3 +36,5 @@ function getRecord() {
     xhttp.open("GET", URL, true);
     xhttp.send();
 }
+
+Ranga is a douchebag
