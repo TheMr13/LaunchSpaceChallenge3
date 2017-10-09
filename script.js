@@ -30,7 +30,7 @@ function getRecord() {
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
             for (var i = 0; i < response.length; i++) {
-              document.getElementById("records").innerHTML += response[i].name + "<br> ";
+              document.getElementById("records").innerHTML += response[i].name + " " + response[i].DOB + "<br> ";
             }
         }
     };
