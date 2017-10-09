@@ -12,6 +12,7 @@ function showAlert() {
 }
 
 function postRecord() {
+    var DOB = document.getElementById("DOB").value;
     var name = document.getElementById("name").value;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -19,7 +20,7 @@ function postRecord() {
             document.getElementById("result").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", URL + "?username=" + name, true);
+    xhttp.open("POST", URL + "?username=" + name + "&DOB=" + DOB, true);
     xhttp.send();
 }
 
